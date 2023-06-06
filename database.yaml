@@ -1,0 +1,22 @@
+# 使用するDB　Firestore Realtime Database
+
+# Firestore
+Users:
+  UserId: string
+  {UserId}:
+    PollId: string
+    Question: string
+    Options:
+      - OptionId
+      - OptionText
+  Name: string
+  Email: string
+  Role: string
+  PreferredNotification: string
+
+# Realtime Database
+UserPolles:
+  UserId: string
+  PollId: string
+  VotedDate: timestamp
+  VotedOption: string
